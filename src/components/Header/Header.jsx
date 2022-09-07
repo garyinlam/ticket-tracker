@@ -3,7 +3,9 @@ import "./Header.scss"
 
 const Header = () => {
   return (
-    <h1>Ticket Tracker</h1>
+    <header className='header'>
+      <h1 className='header__title'>Ticket Tracker</h1>
+    </header>
   )
 }
 

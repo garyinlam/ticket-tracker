@@ -4,11 +4,12 @@ import EmployeeCard from '../EmployeeCard/EmployeeCard'
 
 const CardContainer = (props) => {
   const {teamArr} = props;
+  const teamJSX = teamArr.map((member) => { 
+    return <EmployeeCard key={member.id} name={member.name} role={member.role} />
+  })
   return (
-    <div>
-      {teamArr.map((member) => { 
-        return <EmployeeCard key={member.id} name={member.name} role={member.role} />
-      })}
+    <div className='card-container'>
+      {teamJSX}
     </div>
   )
 }

@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./EmployeeCard.scss"
 import Counter from '../Counter/Counter'
 
 
 const EmployeeCard = (props) => {
   const {name, role} = props
+
   return (
     <div className='card'>
       <h2 className='card__name'>{name}</h2>
