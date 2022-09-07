@@ -1,9 +1,13 @@
 import React from 'react'
-import "ButtonContainer.scss"
+import "./ButtonContainer.scss"
+import Button from '../Button/Button'
 
 const ButtonContainer = () => {
   return (
-    <div>ButtonContainer</div>
+    <div className='button-container'>
+      <Button buttonText='-' />
+      <Button buttonText='+' />
+    </div>
   )
 }
 

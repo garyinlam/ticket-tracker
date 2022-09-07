@@ -2,13 +2,12 @@ import React from 'react'
 import "./CardContainer.scss"
 import EmployeeCard from '../EmployeeCard/EmployeeCard'
 
-const tempArr = [1,2,3,4,5,6,7,8];
-
-const CardContainer = () => {
+const CardContainer = (props) => {
+  const {teamArr} = props;
   return (
     <div>
-      {tempArr.map(() => { 
-        return <EmployeeCard />
+      {teamArr.map((member) => { 
+        return <EmployeeCard key={member.id} name={member.name} role={member.role} />
       })}
     </div>
   )
