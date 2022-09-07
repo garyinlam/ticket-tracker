@@ -2,9 +2,9 @@ import React from 'react'
 import "./Button.scss"
 
 const Button = (props) => {
-  const {buttonText} = props
+  const {buttonText, handleClick} = props
   return (
-    <button className='button'>{buttonText}</button>
+    <button onClick={handleClick} className='button'>{buttonText}</button>
   )
 }
 
