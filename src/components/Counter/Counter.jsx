@@ -7,7 +7,7 @@ const Counter = (props) => {
   const {handleDecrement, handleIncrement, count} = props
   return (
     <div className='counter'>
-      <h4 className='counter__heading'>Tickets</h4>
+      <h4 className='counter__heading'>Tickets Completed</h4>
       <p className='counter__tracker'>{count}</p>
       <ButtonContainer handleDecrement={handleDecrement} handleIncrement={handleIncrement} />
     </div>
