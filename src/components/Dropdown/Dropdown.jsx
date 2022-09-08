@@ -9,13 +9,13 @@ const Dropdown = (props) => {
   })
 
   return (
-    <div>
-      <label htmlFor="role">Role:</label>
-      <select id="role" onChange={handleFilter}>
+    <>
+      <label htmlFor="role" className='dropdown-label'>Role:</label>
+      <select id="role" onChange={handleFilter} className='dropdown-box'>
         <option value="">Select role:</option>
         {itemsJSX}
       </select>
-    </div>
+    </>
   )
 }
 

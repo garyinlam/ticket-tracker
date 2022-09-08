@@ -10,7 +10,6 @@ const EmployeeCard = (props) => {
 
   const handleIncrement = () => {
     setCounter(counter + 1);
-
   }
 
   const handleDecrement = () => {
