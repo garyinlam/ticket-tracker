@@ -1,5 +1,9 @@
+@use "../../assets/sass/variables" as *;
+
 .header {
-  margin: 10px 0;
+  padding: 10px 0;
+  color: $color-white;
+  background-color: $color-gray;
   &__title {
     margin-left: 20px;
   }

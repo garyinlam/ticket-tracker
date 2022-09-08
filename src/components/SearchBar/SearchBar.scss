@@ -1,4 +1,12 @@
+@use "../../assets/sass/variables" as *;
+
+
 .search-bar {
   display: flex;
   align-items: center;
+  background-color: $color-gray;
+  color: $color-white;
+  padding: 5px;
+  border-bottom: 4px solid $color-black;
+
 }

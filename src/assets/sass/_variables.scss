@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-$color-clicked: #bbbbbb;
-$color-black: #111111;
+$color-clicked: #e4f5ff;
+$color-black: #3C3C3C;
+$color-white: #dddddd;
+$color-gray: #4e4e4e;
+$color-background: #9e9e9e;
+$color-primary: #ffffff;
 
 $border-default: 2px solid $color-black;
+$border-radius: 10px;
+
+$shadow: 2px 2px 2px 0 #888888;
 
 $font-default: 'Poppins',Century Gothic,CenturyGothic,AppleGothic,sans-serif;

@@ -1,1 +1,9 @@
 @use "./assets/sass/base";
+@use "./assets/sass/variables" as *;
+
+.app {
+  background: $color-background;
+  background: linear-gradient(180deg, $color-background 0%, $color-white 100%);
+
+  min-height: 100vh;
+}

@@ -12,6 +12,11 @@
   width: 250px;
   box-sizing: border-box;
 
+  background-color: $color-white;
+  border-radius: $border-radius;
+
+  box-shadow: $shadow;
+
   > * {
     margin: 15px 0;
   }

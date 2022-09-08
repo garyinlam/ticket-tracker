@@ -10,6 +10,11 @@
   border: $border-default;
   padding: 15px;
   margin: 15px 5px;
+  background-color: $color-primary;
+  border-radius: $border-radius;
+
+  box-shadow: $shadow;
+  
 
   &__tracker {
     font-weight: bold;

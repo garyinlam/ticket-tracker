@@ -20,11 +20,7 @@ const EmployeeCard = (props) => {
 
   let classes = "card";
 
-  if (!role.includes(filter)) {
-    classes += " hidden"
-  }
-
-  if(!name.toLowerCase().includes(search)) {
+  if (!role.includes(filter) || !name.toLowerCase().includes(search)) {
     classes += " hidden"
   }
 
