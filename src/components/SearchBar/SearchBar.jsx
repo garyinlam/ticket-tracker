@@ -1,16 +1,14 @@
 import React from 'react'
+import Dropdown from '../Dropdown/Dropdown';
 import SearchBox from '../SearchBox/SearchBox';
 import "./SearchBar.scss"
 
 const SearchBar = (props) => {
-  const {handleInput} = props;
+  const {handleInput, handleFilter, roles} = props;
   return (
     <div className='search-bar'>
       <SearchBox handleInput={handleInput} />
-      {/* <label htmlFor="role">Role:</label>
-      <select id="role">
-
-      </select> */}
+      <Dropdown items={roles} handleFilter={handleFilter} />
     </div>
   )
 }
