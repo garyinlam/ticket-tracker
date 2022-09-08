@@ -26,9 +26,10 @@ function App() {
     <div className="app">
       <Header />
       <SearchBar handleInput={handleInput} handleFilter={handleFilter} roles={rolesArr} />
-      <CardContainer teamArr={team.filter((a) => a.role.includes(roleFilter)).filter((a) => a.name.toLowerCase().includes(searchValue))} />
+      <CardContainer teamArr={team} role={roleFilter} search={searchValue} />
     </div>
   );
 }
 
 export default App;
+//.filter((a) => a.role.includes(roleFilter)).filter((a) => a.name.toLowerCase().includes(searchValue))

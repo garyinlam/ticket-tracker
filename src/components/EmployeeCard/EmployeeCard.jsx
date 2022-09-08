@@ -4,7 +4,7 @@ import Counter from '../Counter/Counter'
 
 
 const EmployeeCard = (props) => {
-  const {name, role} = props
+  const {name, role, filter, search} = props
 
   const [counter, setCounter] = useState(0);
 
@@ -18,8 +18,18 @@ const EmployeeCard = (props) => {
     }
   }
 
+  let classes = "card";
+
+  if (!role.includes(filter)) {
+    classes += " hidden"
+  }
+
+  if(!name.toLowerCase().includes(search)) {
+    classes += " hidden"
+  }
+
   return (
-    <div className='card'>
+    <div className={classes}>
       <h2 className='card__name'>{name}</h2>
       <h3 className='card__role'>{role}</h3>
       <Counter handleDecrement={handleDecrement} handleIncrement={handleIncrement} count={counter} />
